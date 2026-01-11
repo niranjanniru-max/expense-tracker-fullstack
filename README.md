@@ -8,6 +8,111 @@
 # 📡 Expense Tracker API Documentation
 
 Base URL: `http://localhost:3000/api`
+## ✨ Features
+
+### 🔐 Authentication & Security (6 Features)
+- ✅ User Registration with Email/Password
+- ✅ Secure Login with JWT Tokens
+- ✅ Password Encryption using bcrypt
+- ✅ Persistent Session (Auto-login after app restart)
+- ✅ Secure Logout
+- ✅ Token-based API Authentication
+
+### 💰 Expense Management (8 Features)
+- ✅ Add New Expense
+- ✅ Edit Existing Expense
+- ✅ Delete Expense with Confirmation Dialog
+- ✅ View All Expenses in Organized List
+- ✅ Expense Title (required field)
+- ✅ Amount with Validation
+- ✅ Category Selection (5 predefined + unlimited custom)
+- ✅ Expense Description/Notes (up to 150 characters)
+
+### 🔍 Filtering & Search (7 Features)
+- ✅ Real-time Search by Title
+- ✅ Real-time Search by Category
+- ✅ Filter by Month (All 12 months: Jan-Dec)
+- ✅ Filter by Year (2021-2026, 6 years available)
+- ✅ Auto-default to Current Month on app open
+- ✅ Clear Search Button
+- ✅ Combined Month + Year Filtering
+
+### 📊 Sorting & Organization (3 Features)
+- ✅ Sort by Date (Newest First)
+- ✅ Sort by Amount (Highest First)
+- ✅ Visual Checkmark for Active Sort Option
+
+### 📈 Analytics & Insights (4 Features)
+- ✅ Total Monthly Spending Display
+- ✅ Transaction Count Display
+- ✅ Category-wise Spending Breakdown
+- ✅ Animated Counter (Smooth number transitions)
+
+### 🎨 UI/UX Features (12 Features)
+- ✅ Dark Mode Support
+- ✅ Light Mode Support
+- ✅ Theme Persistence (Remembers user choice)
+- ✅ Smooth Fade Animations
+- ✅ Slide Transitions
+- ✅ Scale Animations on Floating Action Button
+- ✅ Material Design 3
+- ✅ Beautiful Gradient Backgrounds
+- ✅ Loading Indicators
+- ✅ Helpful Error Messages
+- ✅ Empty State Displays
+- ✅ Confirmation Dialogs (Prevents accidental actions)
+
+### 📝 Form Features (7 Features)
+- ✅ Date Picker
+- ✅ Time Picker
+- ✅ Category Dropdown
+- ✅ Custom Category Input
+- ✅ Character Counter for Descriptions
+- ✅ Real-time Form Validation
+- ✅ Clear Validation Error Messages
+
+### 🔌 Backend API (6 Endpoints)
+- ✅ POST `/api/register` - Create new user
+- ✅ POST `/api/login` - Authenticate user
+- ✅ GET `/api/expenses` - Fetch all expenses
+- ✅ POST `/api/expenses` - Create expense
+- ✅ PUT `/api/expenses/:id` - Update expense
+- ✅ DELETE `/api/expenses/:id` - Delete expense
+
+### 🗄️ Database (2 Collections)
+- ✅ Users Collection (email, hashed password)
+- ✅ Expenses Collection (title, amount, category, description, date, userId)
+
+### 🛡️ Security Features (5 Features)
+- ✅ JWT Token Authentication
+- ✅ Password Hashing with bcrypt
+- ✅ Protected API Endpoints
+- ✅ User-specific Data Access
+- ✅ Input Validation (Frontend + Backend)
+
+### 📱 Additional Features (5 Features)
+- ✅ Pull-to-Refresh
+- ✅ About Screen with App Info
+- ✅ Currency Formatting (₹1,250.00)
+- ✅ Forgot Password UI
+- ✅ Register/Login Toggle
+
+---
+
+**Total Features: 65+**
+
+---
+
+## 🎯 Categories
+
+**Predefined Categories:**
+- 🍔 Food
+- 🚗 Transport  
+- 🛍️ Shopping
+- 📄 Bills
+- 🎬 Entertainment
+
+**Custom Categories:** Unlimited - users can create their own!
 
 ## 🔐 Authentication Endpoints
 
@@ -241,4 +346,5 @@ Deletes an expense.
 - Amounts are stored as numbers
 - Passwords are hashed with bcrypt
 - JWT tokens expire based on server configuration
+
 - Description field is optional (default: empty string)
