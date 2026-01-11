@@ -5,7 +5,7 @@
 1. Extract `backend.zip` → `backend/`
 2. Extract `mobile.zip` → `mobile/expense_tracker/`
 3. Follow installation steps below
-# 📡 Expense Tracker API Documentation
+
 
 Base URL: `http://localhost:3000/api`
 ## ✨ Features
@@ -348,3 +348,4 @@ Deletes an expense.
 - JWT tokens expire based on server configuration
 
 - Description field is optional (default: empty string)
+
